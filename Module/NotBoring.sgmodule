@@ -1,7 +1,0 @@
-#!name=Not Boring
-#!desc=Not Boring +解锁订阅，可以解锁全家桶！四件套
-
-[MITM]
-hostname = %APPEND% api-weather.andy.works
-
-Not Boring = type=http-response,pattern=^https?:\/\/api-weather\.andy\.works\/v\d\/\w{18}$,max-size=0,requires-body=true,timeout=10,script-path=https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/NotBoring.js, enable=true
